@@ -95,23 +95,23 @@ public class Doself {
 //			}
 //		}
 //		7번
-		int num = 0;
-		for (int i=1;i<=5;i++) {
-			System.out.println();
-			for(int j=1;j<=10;j++) {
-				num++;
-			if(num%10==3|num%10==6|num%10==9&&num/10==3) 
-			{
-				System.out.print("\t★★");
-			}else if(num%10==3 || num%10==6 || num%10==9) {
-				System.out.print("\t★");
-			}else if(num/10==3) {
-				System.out.print("\t★");
-			}else {
-				System.out.printf("\t%2d",num);
-			}
-			}
-		}
+//		int num = 0;
+//		for (int i=1;i<=5;i++) {
+//			System.out.println();
+//			for(int j=1;j<=10;j++) {
+//				num++;
+//			if(num%10==3|num%10==6|num%10==9&&num/10==3) 
+//			{
+//				System.out.print("\t★★");
+//			}else if(num%10==3 || num%10==6 || num%10==9) {
+//				System.out.print("\t★");
+//			}else if(num/10==3) {
+//				System.out.print("\t★");
+//			}else {
+//				System.out.printf("\t%2d",num);
+//			}
+//			}
+//		}
 	
 	}//end main
 }//end class

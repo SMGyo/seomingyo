@@ -10,8 +10,7 @@ public class StudentMain {
 		new Student("000003","삼",50, 90, 68),
 		new Student("000004","사",81, 62, 83),
 		new Student("000005","오",100, 100, 100)};
-		for (Student[] ele : stuArr) {
-			for(:ele)
+		for (Student ele : stuArr) {
 			System.out.println(ele);
 			}
 //		Student st1 = new Student("000001","일",0,0,0);
