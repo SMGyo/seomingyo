@@ -14,7 +14,7 @@ public class StMain {
 		}
 		st2.name = "거시기";
 		System.out.println(st.name);
-		st.name = "아무개";//st 출력후 st2 변경
+		st.name = "아무개";//st와 st2는 같음 
 		System.out.println(st2.name);
 	}
 

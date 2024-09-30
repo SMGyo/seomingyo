@@ -5,17 +5,29 @@ public class Car {
 	String company = "현대자동차";
 	String model = "그랜저";
 	String color = "검정";
-	int maxSpeed = 350;
-	int speed;
-	int gas;
+	//getter setter
+	private int maxSpeed = 350;
+	private int speed;
+	private int gas;
+	private boolean stop;
+	public boolean isStop() {
+		return stop;
+	}
+	public void setStop(boolean stop) {
+		this.stop = stop;
+		this.speed = 0;
+	}
+//	public void setGasState(boolean gasState) {
+//		this.gasState = gasState;
+//	}
 	//생성자
 	//메소드
-	void setGas(int gas) {
-		this.gas=gas;
-	}
-	int getSpeed() {//speed값 리턴
-		return speed;
-	}
+//	void setGas(int gas) {
+//		this.gas=gas;
+//	}
+//	int getSpeed() {//speed값 리턴
+//		return speed;
+//	}
 	void keyTurnOn() {
 		System.out.println("키를 돌립니다.");
 	}
@@ -45,5 +57,30 @@ public class Car {
 			System.out.println("달립니다.(시속 : " + speed + "km/h)");
 		}
 	}
+	public int getSpeed() {
+		return speed;
+	}
+	public void setSpeed(int speed) {
+		if(speed < 0) {
+			this.speed = 0;
+			return;
+		}
+		this.speed = speed;
+	}
+	public int getGas() {
+		return gas;
+	}
+	public void setGas(int gas) {
+		this.gas = gas;
+	}
+	public int getMaxSpeed() {
+		return maxSpeed;
+	}
+	public void setMaxSpeed(int maxSpeed) {
+		this.maxSpeed = maxSpeed;
+	}
+//	public boolean isGasState() {//boolean타입 : get대신 is씀
+//		return gasState;
+//	}
 
 }//end class
