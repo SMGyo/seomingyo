@@ -10,10 +10,10 @@ public class CalcMain {
 		System.out.println("자식 메소드 : " + result);
 		
 		double result1 = calc.areaCircle(10);
-		System.out.println("자식 메소드 : " + result1);
+		System.out.println("부모 메소드 : " + result1);
 		
 		result = com.ac(10);
-		System.out.println("부모 메소드 : " + result);
+		System.out.println("자식 메소드 : " + result);
 
 	}
 
