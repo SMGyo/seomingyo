@@ -2,21 +2,23 @@ package chap13;
 
 public class Board {
 	//필드
-	String subject;
-	String content;
-	String writer;
+//	String subject;
+	private String content;
+//	String writer;
+	private String title;
+
 	//생성자
-	public Board(String subject,String content,String writer) {
-		this.subject = subject;
+	public Board(String title,String content) {
+		this.title = title;
 		this.content = content;
-		this.writer = writer;
 	}
 	//메소드
-	
-	@Override
-	public String toString() {
-//		return super.toString();
-		return subject + " : " + content + " : " + writer;
-	}
+	public String getTitle() {return title;}
+	public String getContent() {return content;}
+//	@Override
+//	public String toString() {
+////		return super.toString();
+//		return subject + " : " + content + " : " + writer;
+//	}
 	
 }

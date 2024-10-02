@@ -15,9 +15,10 @@ public class MemberMain {
 		System.out.println("총 객체 수 : " + set.size());
 		
 		//set 전체 출력
-		for(Member ele : set) {
-			System.out.printf("%s%s\n",ele.name,ele.age);
+		for(Member element : set) {
+			System.out.printf("%s%s\n",element.name,element.age);
 		}
+		//반복자
 		Iterator<Member> iterator = set.iterator();
 		while(iterator.hasNext()) {
 			Member element = iterator.next();
