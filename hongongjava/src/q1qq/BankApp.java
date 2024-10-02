@@ -1,4 +1,4 @@
-package 서민교;
+package q1qq;
 
 import java.util.Scanner;
 
@@ -17,15 +17,9 @@ public class BankApp {
 			System.out.println("--------------------------------------------");
 			data=sc.nextLine();
 			switch(data) {
-			case "1" :
+			case "1" :								
 				System.out.print("계좌번호: ");
 				String ano=sc.nextLine();
-//				for (Account num : pp) {
-//					if(num.getAno().equals(ano)) {
-//						System.out.println("이미 생성된 계좌입니다.");
-//						break;
-//					}
-//				}
 				System.out.print("계좌주: ");
 				String owner=sc.nextLine();
 				System.out.print("초기입금액: ");
@@ -34,11 +28,40 @@ public class BankApp {
 					System.out.println("다시 입력해주세요!");
 					break;
 				}
-				pp[count]=new Account(ano,owner,balance);
-				count++;
-				System.out.print("결과 : 계좌가 생성되었습니다.");
-
-				break;
+				boolean tf = false;
+				for (int i=0; i<count; i++) {
+					if (pp[i].getAno().equals(ano)) {
+						tf = true;
+					}
+				}
+				if(tf) {
+					System.out.println("이미 생성된 계좌입니다.");
+				}else {
+					pp[count]=new Account(ano,owner,balance);
+					count++;
+					System.out.println("계좌가 생성되었습니다.");
+				}
+//					if(pp[count]==null) {
+//						System.out.print("결과 : 계좌가 생성되었습니다.\n");
+//						pp[count]=new Account(ano,owner,balance);
+//						count++;
+//						break;
+//					}
+//					for(Account list : pp) {
+//						if(list.getAno().equals(ano)) {
+//							pp[0]=null;
+//							
+//						}
+//					}
+//					else {
+//						for(Account list : pp) {
+//							if(list.getAno().equals(ano)) {
+//								System.out.println("이미 생성된 계좌입니다.\n");
+//								break;
+//							}
+//						}
+//					}
+			break;
 			case "2" :
 				if(pp[0]==null) {
 						System.out.println("조회할수있는 계좌가 없습니다.");
